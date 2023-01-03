@@ -1,0 +1,65 @@
+.checkboxes1 ul, .checkboxes1 li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.checkboxes1 li {
+    display:inline-block;
+    width:10%;
+}.checkboxes2 ul, .checkboxes2 li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.checkboxes2 li {
+    display:inline-block;
+    width:10%;
+}
+.checkboxes3 ul, .checkboxes3 li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.checkboxes3 li {
+    display:inline-block;
+    width:10%;
+}
+.menu-balises{
+    width: max-content;
+}
+.select-field{
+    border: 1px solid rgb(187, 187, 187);
+}
+.select-field,.task,.list{
+    width: 100%;
+    background-color: white;
+    padding: 0.3rem;
+}
+.list{
+    box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+    display: none;
+}
+.down-arrow{
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.balise{
+    display: block;
+    padding-left: 0;
+}
+.balise span{
+    float: right;
+    font-size: 0.6rem;
+    padding-top: 6px;
+}
+.task:hover{
+    background-color: aliceblue;
+}
+.show{
+    display: block;
+}
+.rotate180{
+    transform: rotate(-60deg);
+}

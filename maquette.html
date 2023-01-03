@@ -1,0 +1,209 @@
+<!-- Création de la page HTML, ce sera la structurr de la page web -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamarkforecast</title>
+
+    <!-- On associe à cette page, la page de style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Création de la structure de la page -->
+<body>
+ <center>
+
+<!-- On importe le logo du site -->
+    <img src="\images\logo.png" alt="" width="300" height="auto" class="center" >
+
+<!-- Brève phrase descriptive des fonctionnalités de la page  -->
+    <p>Ce site accessible aux personnes déficientes visuelles, indique les prévisions météorologiques marines pour une certaine balise à une heure et une date donnée. </p>
+ </center>
+<hr>
+<center>
+<h1 style = 'display: inline'>Choisir les écheances</h1>
+<h2>Aujourd'hui</h2>
+
+<!-- Création de la première checkbox peremettant de choisir les différentes horaires pour aujourd'hui -->
+<ul class="checkboxes1">
+    <li><label><input type="checkbox"  name = 'today'/>07</label></li>
+    <li><label><input type="checkbox"name = 'today'/>09</label></li>
+    <li><label><input type="checkbox"name = 'today'/>11</label></li>
+    <li><label><input type="checkbox"name = 'today'/>13</label></li>
+    <li><label><input type="checkbox"name = 'today'/>15</label></li>
+    <li><label><input type="checkbox"name = 'today'/>17</label></li>
+    <li><label><input type="checkbox"name = 'today'/>19</label></li>
+</ul>
+<h2>Demain</h2>
+<!-- Création de la première checkbox peremettant de choisir les différentes horaires pour demain -->
+<ul class="checkboxes2">
+    <li><label><input type="checkbox"name = 'tomorrow'/>7</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>9</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>11</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>13</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>15</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>17</label></li>
+    <li><label><input type="checkbox"name = 'tomorrow'/>19</label></li>
+</ul>
+</center>
+
+<hr>
+<center>
+<h1>Choisir Balise ou Phare</h1>
+
+    <div class="menu-balises">
+
+<!-- Création d'un menu déroulant avec l'ensemble des balises   -->
+     <div class="select-field">
+<input type="text" name="" placeholder="selectionner Balise" id="" class="input-selector">
+     <span class="down-arrow">&blacktriangledown;</span>
+     </div>
+     <div class="list">
+    
+       <label for="balise1" class="balie">
+
+        <!-- Pour chaque balise, une checkbox lui est associée afin de savoir si l'utilisateur souhaite s'en servir ou non -->
+
+            <input type="checkbox" name="balise" id="balise1">
+            Lochrist
+            
+     </label>
+       <label for="balise2" class="balise"><input type="checkbox" name="balise" id="balise2">Dellec</label>
+       <label for="balise3" class="balise"><input type="checkbox" name="balise" id="balise3">Pointe de Morgat</label>
+       <label for="balise4" class="balise">
+            <input type="checkbox" name="balise" id="balise4">
+            Pointe du Petit Minou
+     </label>
+     <label for="balise5" class="balise">
+        <input type="checkbox" name="balise" id="balise4">
+        Pointe de Kermorvan
+ </label>
+     <label for="balise6" class="balise">
+        <input type="checkbox" name="balise" id="balise4">
+        Trézien
+ </label>
+     <label for="balise7" class="balise">
+        <input type="checkbox" name="balise" id="balise4">
+        Pointe du Portzic
+ </label>
+     <label for="balise8" class="balise">
+    <input type="checkbox" name="balise" id="balise4">
+     Saint-Mathieu
+
+ </label>
+     </div>
+    <h2></h2>
+
+    <!-- Création d'un boutton afin que l'utilisateur puisse valider ses choix de balise -->
+     <button class="Balise Proche"
+     type="button">
+     Balise Proche
+     </button>
+    </center>
+    <h1></h1>
+    <hr>
+<center>
+<h1>Choisir les types de prévisions</h1>
+
+<!-- Création de checkbox pour les différentes prévisions souhaitées -->
+<ul class="checkboxes3">
+    <li><label><input type="checkbox" name = 'previsions' />windForce</label></li>
+    <li><label><input type="checkbox" name = 'previsions' />precipitations</label></li>
+    <li><label><input type="checkbox" name = 'previsions' />heatIndex</label></li>
+    <li><label><input type="checkbox"  name = 'previsions' />Houle</label></li>
+</ul>
+
+<!-- Création du bouton de validation associé -->
+<button id = 'btn'>Recherche</button>
+</center>
+
+<hr>
+
+<h1 id ='balise'></h1>
+
+
+
+<h1 id ='today'></h1>
+<h2 id ='todaySelectedHoraires'></h2>
+<h3 id="a"></h3>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para2'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para3'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para4'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para5'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para6'></h2>
+<h2 id ='para7'></h2>   
+
+
+<h1 id ='tomorrow'></h1>
+
+<h2 id ='para11'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para22'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para33'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para44'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para55'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para66'></h2>
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<h2 id ='para77'></h2> 
+<h3 id="b"></h3>
+<h3 id="c"></h3>
+<h3 id="d"></h3>
+
+<!-- Divison permettant d'écrire les phrases, elle est reliée à la page JS car les phrases letient en fonction des valeurs des checkbox -->
+<div id="phrases"></div>
+
+
+<!-- On relie la page HTLML à une page JS -->
+   <script type="text/javascript" src = 'app.js'>
+    </script>
+
+    
+
+    </script>
+</body>
+</html>
